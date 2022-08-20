@@ -113,9 +113,10 @@ const ToDo = () => {
     getUserToDo();
   }, []);
   return (
+    <div className="container">
     <div className="row">
       <div className="title d-flex justify-content-center pt-2">
-        <h1 className="title-1">Lista de tareas</h1>
+        <h1 className="title-1">TO-DO LIST</h1>
       </div>
       <div className="col-3"></div>
       <div className="col-6">
@@ -132,7 +133,7 @@ const ToDo = () => {
               style={{ color: "white" }}
             />
 
-            <label htmlFor="floatingInput">Tarea por hacer</label>
+            <label htmlFor="floatingInput">No hay tareas, añadir tareas</label>
             <div className="task"></div>
             {taskList.map((tarea, i) => {
               return (
@@ -186,6 +187,7 @@ const ToDo = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
